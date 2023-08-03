@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../assets/css/register.css">
 </head>
 <body>
-    <h1>Inscription</h1>
+    <h1>INSCRIPTION</h1>
     <form action="/la_conquete_des_dofus/controllers/users/registerController.php" method="post">
 
         <div class="form">
