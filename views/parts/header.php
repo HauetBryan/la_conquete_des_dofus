@@ -4,15 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <link rel="stylesheet" href="assets/css/Accueil.css">
+  
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/navbar.css">
+  <link rel="stylesheet" href="assets/css/index.css">
+  <link rel="stylesheet" href="assets/css/register.css">
 </head>
 
 <body>
 
   <nav>
     <!-- LOGO -->
-    <div class="NAVBAR">
-      <div class="LOGO">
+    <div class="navbar">
+      <div class="logo">
         <a href="index.php"><img src="assets/images/LOGO DOFUS.png" alt="" width="75px"></a>
       </div>
       <!-- MENU DÉROULANT -->
@@ -53,17 +57,17 @@
         </div>
       </div>
       <!-- Barre de recherche -->
-      <div class="RECHERCHE">
+      <div class="recherche">
         <form action="#" method="get">
           <input type="text" name="search" id="search" placeholder="Rechercher...">
           <input type="submit" value="Rechercher">
         </form>
       </div>
       <!-- PROFIL -->
-      <div class="PROFIL">
+      <div class="profil">
         <ul>
-          <li><a href="views/users/register.php" id="INSCRIPTION">S'inscrire</a></li>
-          <li><a href="#" id="CONNEXION">Connexion</a></li>
+          <li><a href="/inscription" id="inscription">S'inscrire</a></li>
+          <li><a href="#" id="connexion">Connexion</a></li>
         </ul>
       </div>
     </div>

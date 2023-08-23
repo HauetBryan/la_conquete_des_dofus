@@ -1,7 +1,7 @@
 <?php require_once 'views/parts/header.php';
       require_once 'controllers/indexController.php' ?>
 
-
+<main id="index">
   <header></header>
 
   <div>
@@ -42,5 +42,5 @@
       inventore nisi, impedit esse voluptatem! Numquam accusamus laborum corrupti aliquam quod eveniet eum dolores!
       Corrupti.</h1>
   </div>
-  
+  </main>
   <?php require_once 'views/parts/footer.php'?>

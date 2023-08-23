@@ -1,0 +1,135 @@
+/* NAVBAR */
+.navbar {
+    background-color: #171717;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: #D4AF37 1px solid;
+    height: 75px;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+/* logo */
+.logo {
+    margin-left: 20px;
+}
+
+/* fin logo */
+
+/* menu déroulant */
+
+.dropdown {
+    display: inline-block;
+    margin: 0;
+    position: relative;
+}
+
+.dropbtn {
+    background-color: #2D2D2D;
+    border: none;
+    border-radius: 15%;
+    border-left: 2px solid #D4AF37;
+    border-right: 2px solid #D4AF37;
+    color: #D4AF37;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 12px;
+}
+
+.dropdown-content {
+    background-color: #F8E1B7;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: none;
+    position: absolute;
+    z-index: 1;
+
+}
+
+.dropdown-content a {
+    color: black;
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.dropdown-content a:hover {
+    background-color: #2D2D2D;
+    color: #D4AF37;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* fin menu déroulant */
+
+/* barre de recherche */
+form {
+    display: flex;
+    flex-direction: row;
+}
+
+.recherche {
+    margin-left: 20px;
+    border: 2px solid #D4AF37;
+}
+
+
+input[type="text"] {
+    border: 1px solid #ccc;
+    padding: 5px;
+    width: 200px;
+}
+
+input[type="submit"] {
+    background-color: #D4AF37;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 5px 10px;
+}
+
+input[type="submit"]:hover {
+    color: red;
+}
+
+/* fin barre de recherche */
+
+
+/* profil */
+
+
+.profil ul {
+    background-color: #2D2D2D;
+    border-radius: 15%;
+    border-left: #D4AF37 2px solid;
+    border-right: #D4AF37 2px solid;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+    padding: 0;
+
+}
+
+.profil ul li {
+    margin: 20px;
+    list-style: none;
+
+}
+
+.profil ul li a {
+    color: #D4AF37;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.PROFIL ul li a:hover {
+    color: red;
+}
+
+/* fin profil */
+/* FIN NAVBAR */
