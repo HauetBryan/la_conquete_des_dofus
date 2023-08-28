@@ -1,7 +1,7 @@
 <?php 
 
 require_once '../../models/countriesModel.php';
-require_once '../../models/nationalitiesModel.php';
+
 
 $countries = new countries;
 $countriesList = $countries->getList();
