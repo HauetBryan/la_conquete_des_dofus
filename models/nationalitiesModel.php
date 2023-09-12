@@ -1,5 +1,6 @@
 <?php
-class countries
+
+class nationalities
 {
     public $id;
     public $name;
@@ -12,14 +13,14 @@ class countries
 
     public function getList()
     {
-        $query = 'SELECT id, name FROM `jgh99_countries`;';
+        $query = 'SELECT id, name FROM `jgh99_nationalities`';
         $request = $this->db->query($query);
         return $request->fetchAll(PDO::FETCH_OBJ);
     }
     public function checkIfExistsById()
     {
 
-        $query = "SELECT COUNT(*) FROM `jgh99_countries` WHERE `id` = :id";
+        $query = "SELECT COUNT(*) FROM `jgh99_nationalities` WHERE `id` = :id";
         $request = $this->db->prepare($query);
 
         $request->bindValue(':id', $this->id, PDO::PARAM_INT);
