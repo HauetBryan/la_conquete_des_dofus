@@ -13,9 +13,32 @@ header {
 /* footer */
 footer {
     background-color: #171717;
+    border-top: 2px #D4AF37 solid;
+}
+
+.spacefoot {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    margin-top: 20px;
+}
+
+#report {
+    background-color: lightcoral;
+    height: 40px;
+    width: 300px;
+    font-size: 20px;
+}
+
+.footerp {
+    background-color: #E0E0E0;
+    margin-top: 10px;
+    width: 55%;
+    text-align: center;
+    border-radius: 15px;
+    border: 2px #D4AF37 solid;
+    font-size: 20px;
+    margin-bottom: 15px;
 }
 /* fin footer */

@@ -26,11 +26,9 @@
             <label for="nationalities">Votre nationalité :</label>
             <select name="nationalities" id="nationalities">
                 <option disabled selected>Française</option>
-                <?php
-                foreach ($nationalitiesList as $n) {
-                    echo "<option value=\"$n->id\">$n->name</option>";
-                }
-                ?>
+                <?php foreach ($nationalitiesList as $n) { ?>
+                    <option value="<?= $n->id ?>"><?= $n->name ?></option>
+                <?php } ?>
             </select>
             <?php if (isset($formErrors["nationalities"])) { ?>
                 <p class="error-message"><?= $formErrors["nationalities"] ?></p>

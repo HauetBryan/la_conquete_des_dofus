@@ -17,11 +17,11 @@
     <!-- LOGO -->
     <div class="navbar">
       <div class="logo">
-        <a href="index.php"><img src="assets/images/LOGO DOFUS.png" alt="" width="75px"></a>
+        <a href="/Accueil"><img src="assets/images/LOGO DOFUS.png" alt="" width="75px"></a>
       </div>
       <!-- MENU DÉROULANT -->
       <div class="dropdown">
-        <button class="dropbtn">Accueil</button>
+        <a href="/Accueil"><button class="dropbtn">Accueil</button></a>
         <div class="dropdown-content">
           <a href="#">Notes de patch</a>
           <a href="#">Contact</a>

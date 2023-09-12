@@ -51,7 +51,7 @@ if (count($_POST) > 0) {
     } else {
         $formErrors["passwordC"] = "Le mot de passe doit être rempli, c'est obligatoire.";
     }
-
+    
     if (!empty($_POST['email'])) {
         if (filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
             $users->email = $_POST['email'];
@@ -78,7 +78,7 @@ if (count($_POST) > 0) {
     if (!empty($_POST["nationalities"])) {
         $users->id_nationalities = $_POST['nationalities'];
         $nationalities->id = $_POST['nationalities'];
-        if ($nationalities->checkIfExistsById()) {
+        if ($nationalities->checkIfExistsById() == 0) {
             $formErrors["nationalities"] = "La nationalité est invalide, veuillez en choisir une disponible dans la liste.";
         }
     } else {
