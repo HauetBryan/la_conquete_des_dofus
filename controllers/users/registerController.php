@@ -36,7 +36,7 @@ if (count($_POST) > 0) {
 
     if (!empty($_POST['password'])) {
         if (!preg_match($regex["password"], $_POST["password"])) {
-            $formErrors["password"] = "Le mot de passe n'est pas valide. Il ne peut contenir que des lettres, des chiffres et des numéros.";
+            $formErrors["password"] = "Le mot de passe n'est pas valide. Il ne peut contenir que des lettres, des chiffres, des numéros et des caratères spéciaux.";
         }
     } else {
         $formErrors["password"] = "Le mot de passe doit être rempli, c'est obligatoire.";

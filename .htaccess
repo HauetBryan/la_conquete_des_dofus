@@ -1,3 +1,7 @@
 RewriteEngine On
 
+RewriteRule ^Accueil$ /index.php
+
 RewriteRule ^inscription$ /controllers/users/registerController.php
+
+RewriteRule ^signaler_un_problème$ /views/report.php

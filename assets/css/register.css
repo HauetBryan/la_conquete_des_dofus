@@ -3,18 +3,19 @@
     padding: 0;
     padding-top: 75px;
     box-sizing: border-box;
-    background-color: #171717;  
+    background: linear-gradient(to right, #171717, #D4AF37, #171717);
     font-family: 'EB Garamond', serif;
+    border-bottom: #171717 2px solid;
 }
 
 h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: #D4AF37;
+    color: #171717;
     font-size: 50px;
     text-decoration: underline;
-    text-decoration-color: #D4AF37;
+    text-decoration-color: #171717;
 }
 
 .form {
@@ -109,11 +110,18 @@ h1 {
 }
 
 .annuler {
-    border: 3px solid #D4AF37;
-    color: #D4AF37;
-    font-size: 20px;
-    transition: 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
     background-color: #E0E0E0;
+    color: #171717;
+    border: 3px solid #D4AF37;
+    border-radius: 25px;
+    transition: 0.3s;
+    font-size: 20px;
+    width: 250px;
+    cursor: pointer;
 }
 
 .envoyer:hover {

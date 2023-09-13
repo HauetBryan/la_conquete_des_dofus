@@ -56,7 +56,7 @@
             <?php } ?>
 
             <div class="button">
-                <button type="submit" class="annuler">Annuler</button>
+                <a href="/Accueil" class="annuler">Annuler</a>
                 <button name="submit" type="submit" class="envoyer">Envoyer</button>
             </div>
         </div>
