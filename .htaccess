@@ -2,6 +2,8 @@ RewriteEngine On
 
 RewriteRule ^Accueil$ /index.php
 
-RewriteRule ^inscription$ /controllers/users/registerController.php
+RewriteRule ^Inscription$ /controllers/users/registerController.php
 
-RewriteRule ^signaler_un_problème$ /views/report.php
+RewriteRule ^Connexion$ /controllers/users/loginController.php
+
+RewriteRule ^Signaler-un-problème$ /views/report.php
