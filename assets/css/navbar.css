@@ -38,8 +38,13 @@
     cursor: pointer;
     font-size: 24px;
     padding: 12px;
+    width: 150px;
 }
 
+.dropbtn:hover {
+    background-color: #171717;
+    color: lightcoral;
+}
 .dropdown-content {
     background-color: #F8E1B7;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
@@ -57,8 +62,8 @@
 }
 
 .dropdown-content a:hover {
-    background-color: #2D2D2D;
-    color: #D4AF37;
+    background-color: #171717;
+    color: lightcoral;
 }
 
 .dropdown:hover .dropdown-content {
@@ -102,33 +107,52 @@ input[type="submit"]:hover {
 
 /* profil */
 
-
-.profil ul {
+.inscription {
     background-color: #2D2D2D;
+    border: none;
     border-radius: 15%;
-    border-left: #D4AF37 2px solid;
-    border-right: #D4AF37 2px solid;
-    display: flex;
-    flex-direction: row;
-    margin-right: 10px;
-    padding: 0;
-
-}
-
-.profil ul li {
-    margin: 20px;
-    list-style: none;
-
-}
-
-.profil ul li a {
+    border-left: 2px solid #D4AF37;
+    border-right: 2px solid #D4AF37;
     color: #D4AF37;
+    cursor: pointer;
     font-size: 24px;
+    padding: 12px;
+    width: 150px;
+}
+
+.inscription:hover{
+    background-color: #171717;
+    color: lightcoral;
+}
+
+.inscription a {
+    color: #D4AF37;
     text-decoration: none;
 }
 
-.PROFIL ul li a:hover {
-    color: red;
+.connexion a {
+    color: #D4AF37;
+    text-decoration: none;
+}
+
+.connexion {
+    background-color: #2D2D2D;
+    border: none;
+    border-radius: 15%;
+    border-left: 2px solid #D4AF37;
+    border-right: 2px solid #D4AF37;
+    color: #D4AF37;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 12px;
+    width: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.connexion:hover{
+    background-color: #171717;
+    color: lightcoral;
 }
 
 /* fin profil */

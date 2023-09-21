@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/register.css">
+  <link rel="stylesheet" href="assets/css/login.css">
 </head>
 
 <body>
@@ -37,7 +38,7 @@
       </div>
 
       <div class="dropdown">
-        <a class="dropbtn">Quêtes</a>
+        <button class="dropbtn">Quêtes</button>
         <div class="dropdown-content">
           <a href="#">Quêtes des 26 dofus</a>
           <a href="#">Alignements bontarien</a>
@@ -46,7 +47,7 @@
       </div>
 
       <div class="dropdown">
-        <a class="dropbtn">Tutoriels</a>
+        <button class="dropbtn">Tutoriels</button>
         <div class="dropdown-content">
           <a href="#">Attitudes</a>
           <a href="#">Les chemins</a>
@@ -65,10 +66,8 @@
       </div>
       <!-- PROFIL -->
       <div class="profil">
-        <ul>
-          <li><a href="/inscription" id="inscription">S'inscrire</a></li>
-          <li><a href="#" id="connexion">Connexion</a></li>
-        </ul>
+          <a href="/Inscription" id="inscription"><button class="inscription">Inscription</button></a>
+          <a href="/Connexion" id="connexion"><button class="connexion">Connexion</button></a>
       </div>
     </div>
   </nav>
