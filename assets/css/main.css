@@ -2,11 +2,22 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
 }
 /* header */
 header {
-    height: 100vh;
+    height: 550px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 80px;
+    color: #171717;
 }
 /* fin header */
 
@@ -40,5 +51,10 @@ footer {
     border: 2px #D4AF37 solid;
     font-size: 20px;
     margin-bottom: 15px;
+}
+
+.socials a img:hover{
+    background-color: #a3831a;
+    border-radius: 50px;
 }
 /* fin footer */

@@ -1,6 +1,6 @@
 <main id="register">
     <h1>INSCRIPTION</h1>
-    <form action="/inscription" method="post">
+    <form action="/Inscription" method="post">
 
         <div class="form">
             <!-- IDENTIFIANT -->
@@ -25,7 +25,7 @@
             <!-- NATIONALITÉ -->
             <label for="nationalities">Votre nationalité :</label>
             <select name="nationalities" id="nationalities">
-                <option disabled selected>Française</option>
+                <option disabled selected>Français</option>
                 <?php foreach ($nationalitiesList as $n) { ?>
                     <option value="<?= $n->id ?>"><?= $n->name ?></option>
                 <?php } ?>

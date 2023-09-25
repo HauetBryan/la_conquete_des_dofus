@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  
+
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="stylesheet" href="assets/css/navbar.css">
   <link rel="stylesheet" href="assets/css/index.css">
   <link rel="stylesheet" href="assets/css/register.css">
   <link rel="stylesheet" href="assets/css/login.css">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -66,8 +67,8 @@
       </div>
       <!-- PROFIL -->
       <div class="profil">
-          <a href="/Inscription" id="inscription"><button class="inscription">Inscription</button></a>
-          <a href="/Connexion" id="connexion"><button class="connexion">Connexion</button></a>
+        <a href="/Inscription" id="inscription"><button class="inscription">Inscription</button></a>
+        <a href="/Connexion" id="connexion"><button class="connexion">Connexion</button></a>
       </div>
     </div>
   </nav>

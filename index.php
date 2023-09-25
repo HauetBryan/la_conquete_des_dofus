@@ -1,9 +1,12 @@
 <?php require_once 'views/parts/header.php';
-      require_once 'controllers/indexController.php' ?>
+require_once 'controllers/indexController.php' ?>
 
 <main id="index">
-  <header></header>
+      <header>
+            <h1>LA CONQUÊTE DES DOFUS</h1>
+      </header>
+</main>
+<p>test</p>
 
-
-  </main>
-  <?php require_once 'views/parts/footer.php'?>
+<script src="assets/js/script.js"></script>
+<?php require_once 'views/parts/footer.php' ?>

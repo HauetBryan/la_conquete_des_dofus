@@ -1,4 +1,5 @@
 <?php
+
 class users
 {
     public $id;
@@ -9,13 +10,14 @@ class users
     public $id_countries;
     public $id_nationalities;
     private $db;
-
+    
     public function __construct()
     {
         try {
-            $this->db = new PDO('mysql:host=localhost;dbname=la_conquete_des_dofus;charset=utf8', 'root', '');
+            $this->db = new PDO('mysql:host=localhost;dbname=la_conquete_des_dofus;charset=utf8', "root", "");
         } catch (PDOException $e) {
-            //Renvoyer vers une page d'erreur
+            print "Erreur :" . $e->getMessage();
+            die;
         }
     }
     public function add()
@@ -54,4 +56,24 @@ class users
         return $request->fetch(PDO::FETCH_COLUMN);
     }
 
+    public function getHash() {
+        $query = "SELECT `password` FROM `jgh99_users` WHERE `email` = :email";
+
+        $request = $this->db->prepare($query);
+
+        $request->bindValue(':email', $this->email, PDO::PARAM_STR);
+        $request->execute();
+        return $request->fetch(PDO::FETCH_COLUMN);
+    }
+
+    public function getInfos() {
+        $query = 'SELECT `id`, `username`, `id_ranks` FROM `jgh99_users` WHERE `email` = :email';
+
+        $request = $this->db->prepare($query);
+            
+        $request->bindValue(':email', $this->email, PDO::PARAM_STR);
+        $request->execute();
+        return $request->fetch(PDO::FETCH_ASSOC); 
+    }
 }
+
