@@ -3,6 +3,7 @@
 require_once '../../models/countriesModel.php';
 require_once '../../models/usersModel.php';
 require_once '../../models/nationalitiesModel.php';
+
 // Créer un tableau $formErrors vide.
 $formErrors = [];
 // regex de username et de password.
@@ -10,6 +11,7 @@ $regex = [
     "username" => "/^[a-zA-Z0-9]{3,20}$/",
     'password' => '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/',
 ];
+
 // instanciation de countries, nationalities et users.
 $countries = new countries;
 $countriesList = $countries->getList();
@@ -85,7 +87,9 @@ if (count($_POST) > 0) {
         $formErrors["nationalities"] = "La nationalité est obligatoire";
     }
     if (count($formErrors) == 0) {
-        $newusers = $users->add();
+        if($users->add()) {
+            $success = 'Votre inscription a bien été prise en compte.';
+        }
     }
 }
 

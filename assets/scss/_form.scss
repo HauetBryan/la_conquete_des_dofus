@@ -1,0 +1,105 @@
+@mixin formButtons ($color, $bgBorderColor, $hoverBgColor) {
+    color: $color;
+    background-color: $bgBorderColor;
+    border: 3px solid $bgBorderColor;
+    width: 100%;
+    margin-top: 20%;
+    border-radius: 35px;
+    transition: 0.3s;
+
+    cursor: pointer;
+    padding: 20px;
+
+    &:hover {
+        background-color: $hoverBgColor;
+        color: $light;
+    }
+}
+
+@mixin formMessages ($color) {
+    color: $color;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+form {
+    &:not(.searchForm) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $light;
+        border: 3px solid $yellow;
+        border-radius: 5px;
+        width: 50%;
+        margin-bottom: 15px;
+
+        label {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            font-size: 30px;
+            color: $dark;
+        }
+
+        input {
+            cursor: pointer;
+            padding: 20px;
+            width: 200px;
+
+            &:not([type=submit]) {
+                border: none;
+                border-bottom: 2px dashed $dark;
+                background-color: $light;
+                border-radius: 5px;
+                width: 60%;
+            }
+        }
+
+        input[type=submit] {
+            @include formButtons($dark, $yellow, $success);
+            margin-bottom: 1rem;
+            width: 300px
+        }
+
+        .cancel {
+            @include formButtons($dark, $light, $danger);
+            color: $dark;
+            background-color: $light;
+            border: 3px solid $danger;
+            border-radius: 35px;
+            transition: .3s;
+            padding: 20px;
+            text-align: center;
+            text-decoration: none;
+            margin-bottom: 1rem;
+            width: 300px;
+        }
+
+        select {
+            width: 40%;
+            padding: 10px;
+            background-color: $dark;
+            border-radius: 5px;
+            color: $yellow;
+            cursor: pointer;
+            border: 2px $yellow solid;
+            text-align: center;
+        }
+
+        .formButtons {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            width: 60%;
+        }
+
+        .success-message {
+            @include formMessages($success);
+        }
+
+        .error-message {
+            @include formMessages($danger);
+        }
+    }
+}

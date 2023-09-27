@@ -5,11 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="stylesheet" href="assets/css/main.css">
-  <link rel="stylesheet" href="assets/css/navbar.css">
-  <link rel="stylesheet" href="assets/css/index.css">
-  <link rel="stylesheet" href="assets/css/register.css">
-  <link rel="stylesheet" href="assets/css/login.css">
+  <link rel="stylesheet" href="assets/css/main.min.css">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Inter:wght@300&display=swap" rel="stylesheet">
 </head>
 
@@ -19,25 +15,17 @@
     <!-- LOGO -->
     <div class="navbar">
       <div class="logo">
-        <a href="/Accueil"><img src="assets/images/LOGO DOFUS.png" alt="" width="75px"></a>
+        <a href="/accueil"><img src="assets/images/LOGO DOFUS.png" alt="" width="75px"></a>
       </div>
       <!-- MENU DÉROULANT -->
-      <div class="dropdown">
-        <a href="/Accueil"><button class="dropbtn">Accueil</button></a>
-        <div class="dropdown-content">
-          <a href="#">Notes de patch</a>
-          <a href="#">Contact</a>
-        </div>
-      </div>
 
       <div class="dropdown">
-        <button class="dropbtn">Donjons</button>
+        <button class="dropbtn">Bestiaire</button>
         <div class="dropdown-content">
-          <a href="#">Explication de tous les donjons sous forme de liste</a>
-          <a href="#">Explication des mobs et de leurs sorts</a>
+          <a href="/monstres">Monstres</a>
         </div>
       </div>
-
+      
       <div class="dropdown">
         <button class="dropbtn">Quêtes</button>
         <div class="dropdown-content">
@@ -48,27 +36,33 @@
       </div>
 
       <div class="dropdown">
-        <button class="dropbtn">Tutoriels</button>
+        <button class="dropbtn">Classes</button>
         <div class="dropdown-content">
-          <a href="#">Attitudes</a>
-          <a href="#">Les chemins</a>
-          <a href="#">Les compagnons</a>
-          <a href="#">Les familiers et montiliers</a>
-          <a href="#">Les montures</a>
-          <a href="#">Explications des 19 classes</a>
+          <a href="/liste-des-classes">Explications des 19 classes</a>
         </div>
       </div>
       <!-- Barre de recherche -->
-      <div class="recherche">
-        <form action="#" method="get">
+      <div class="search">
+        <form action="#" method="get" class="searchForm">
           <input type="text" name="search" id="search" placeholder="Rechercher...">
           <input type="submit" value="Rechercher">
         </form>
       </div>
       <!-- PROFIL -->
       <div class="profil">
-        <a href="/Inscription" id="inscription"><button class="inscription">Inscription</button></a>
-        <a href="/Connexion" id="connexion"><button class="connexion">Connexion</button></a>
+        <?php if (!isset($_SESSION['user'])) { ?>
+          <a href="/inscription" id="inscription"><button class="navbtn">Inscription</button></a>
+          <a href="/connexion" id="connexion"><button class="navbtn">Connexion</button></a>
+        <?php } else { ?>
+          <div class="dropdown">
+            <button class="dropbtn"><?= $_SESSION['user']['username'] ?></button>
+            <div class="dropdown-content">
+              <a href="#">Mon compte</a>
+              <a href="#">Déconnexion</a>
+            </div>
+          </div>
+        <?php } ?>
       </div>
     </div>
   </nav>
+ 

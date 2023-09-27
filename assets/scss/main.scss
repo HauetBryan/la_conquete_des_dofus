@@ -1,0 +1,36 @@
+$dark: #171717;
+$brown: #2D2D2D;
+$yellow: #D4AF37;
+$light : #E0E0E0;
+$danger : lightcoral;
+$success : #A1C049;
+
+
+body {
+    background-color: $brown;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+h1 {
+    color: $yellow;
+    margin-bottom: 3%;
+    font-variant: small-caps;
+    text-align: center;
+}
+
+@import 'cardsList';
+@import 'index';
+@import 'form';
+@import 'navbar';
+@import 'footer';

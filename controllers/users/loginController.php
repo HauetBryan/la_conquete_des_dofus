@@ -1,5 +1,10 @@
 <?php
 session_start();
+
+if(isset($_SESSION['user'])){
+    header('Location: /accueil');
+    exit;
+}
 require_once "../../models/usersModel.php";
 
 $formErrors = [];
@@ -29,7 +34,7 @@ if (count($_POST) > 0) {
 
                 // $_SESSION['success_message'] = 'Connexion réussie !';
                 
-                header('Location:/Accueil');
+                header('Location:/accueil');
                 exit;
             } else {
                 $formErrors['email'] = $formErrors['password'] = 'L\'adresse mail ou le mot de passe est incorrect.';

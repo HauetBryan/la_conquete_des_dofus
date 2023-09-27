@@ -1,7 +1,8 @@
+
 <footer>
   <div class="spacefoot">
     <div class="footerb">
-      <a href="/Signaler-un-problème"><input type="submit" value="Signaler un problème" id="report"></a>
+      <a href="/signaler"><input type="submit" value="Signaler un problème" id="report"></a>
     </div>
     <div class="footerp">
       <p>Dofus est un MMORPG édité par Ankama. "La Conquête Des Dofus" est un site non-officiel sans aucun lien

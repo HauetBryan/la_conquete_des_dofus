@@ -1,0 +1,50 @@
+.cardsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    padding-bottom: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  .card {
+    border: 1px $yellow solid;
+    border-radius: 3px;
+    position: relative;
+
+    img {
+        display: block;
+        height: auto;
+        width: 100%;
+    }
+
+    p {
+        position: absolute;
+      }
+    }
+    
+    
+    .card-overlay {
+      position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: $dark;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card:hover .card-overlay {
+    opacity: 0.6;
+  }
+
+  .card-text {
+    color: white;
+    padding: 2%;
+  }

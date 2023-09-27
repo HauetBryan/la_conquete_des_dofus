@@ -1,5 +1,8 @@
-<?php require_once 'views/parts/header.php';
-require_once 'controllers/indexController.php' ?>
+<?php 
+session_start();
+require_once 'views/parts/header.php';
+require_once 'controllers/indexController.php'; 
+?>
 
 <main id="index">
       <header>
