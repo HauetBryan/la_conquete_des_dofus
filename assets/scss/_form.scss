@@ -3,7 +3,7 @@
     background-color: $bgBorderColor;
     border: 3px solid $bgBorderColor;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 2rem;
     border-radius: 35px;
     transition: 0.3s;
 
@@ -19,8 +19,6 @@
 @mixin formMessages ($color) {
     color: $color;
     font-size: 20px;
-    margin-left: 50px;
-    margin-right: 50px;
     text-align: center;
 }
 

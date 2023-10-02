@@ -1,9 +1,10 @@
 <main id="register">
     <h1>INSCRIPTION</h1>
-
+    <div class="success-message">
     <?php if (isset($success)) { ?>
         <p><?= $success ?></p>
     <?php } ?>
+    </div>
 
     <form action="/inscription" method="post">
 

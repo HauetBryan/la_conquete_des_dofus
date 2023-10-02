@@ -1,0 +1,32 @@
+.quest {
+    background-color: $light;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    border: 3px solid $yellow;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+
+    h2 {
+        text-align: center;
+        color: $yellow;
+    }
+
+    h3 {
+        color: $brown;
+    }
+
+    .questli {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        text-decoration: underline;
+        color: $yellow;
+        margin: 1em;
+    }
+}

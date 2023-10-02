@@ -9,8 +9,7 @@ class classes
 
     public function __construct() {
         try {
-            $this->db = new PDO('mysql:host=localhost;dbname=la_conquete_des_dofus;charset=utf8', 'root', '');
-        } catch (PDOException $e) {
+            $this->db = new PDO('mysql:host=localhost;dbname=la_conquete_des_dofus;charset=utf8', 'Z0MBARR', 'Bryan998lol*');        } catch (PDOException $e) {
             header('Location:/erreur-generale');
             exit;
         }

@@ -1,4 +1,5 @@
 <?php
+session_start();
 
 require_once '../../models/countriesModel.php';
 require_once '../../models/usersModel.php';
@@ -88,7 +89,7 @@ if (count($_POST) > 0) {
     }
     if (count($formErrors) == 0) {
         if($users->add()) {
-            $success = 'Votre inscription a bien été prise en compte.';
+            $success = 'Votre inscription a bien été prise en compte. Veuillez vous connectez';
         }
     }
 }

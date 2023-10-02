@@ -29,8 +29,10 @@ h1 {
     text-align: center;
 }
 
-@import 'cardsList';
-@import 'index';
-@import 'form';
 @import 'navbar';
+@import 'form';
+@import 'index';
+@import 'cardsList';
+@import 'monstersList';
+@import 'quest';
 @import 'footer';

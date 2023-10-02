@@ -8,8 +8,7 @@ class nationalities
 
     public function __construct()
     {
-        $this->db = new PDO('mysql:host=localhost;dbname=la_conquete_des_dofus;charset=utf8', 'root', '');
-    }
+        $this->db = new PDO('mysql:host=localhost;dbname=la_conquete_des_dofus;charset=utf8', 'Z0MBARR', 'Bryan998lol*');    }
 
     public function getList()
     {

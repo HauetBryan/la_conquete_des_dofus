@@ -1,9 +1,21 @@
 RewriteEngine On
 
-RewriteRule ^Accueil$ /index.php
+#Pages
+RewriteRule ^accueil$ /index.php
+RewriteRule ^signaler$ /views/report.php
 
-RewriteRule ^Inscription$ /controllers/users/registerController.php
+#Users
+RewriteRule ^inscription$ /controllers/users/registerController.php
+RewriteRule ^connexion$ /controllers/users/loginController.php
+RewriteRule ^profil$ /controllers/users/profileController.php
+# RewriteRule ^modifier_mon_profil$ /views/users/update_profil.php
+RewriteRule ^deconnexion$ /controllers/users/logoutController.php
 
-RewriteRule ^Connexion$ /controllers/users/loginController.php
+#Classes
+RewriteRule ^liste-des-classes$ /controllers/classes/classesListController.php
 
-RewriteRule ^Signaler-un-problème$ /views/report.php
+#Bestiaire
+RewriteRule ^monstres$ /controllers/bestiaire/bestiaireListController.php
+
+#Quest
+RewriteRule ^quetes$ /controllers/questController/questController.php

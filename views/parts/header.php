@@ -16,6 +16,7 @@
     <div class="navbar">
       <div class="logo">
         <a href="/accueil"><img src="assets/images/LOGO DOFUS.png" alt="" width="75px"></a>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       </div>
       <!-- MENU DÉROULANT -->
 
@@ -25,11 +26,11 @@
           <a href="/monstres">Monstres</a>
         </div>
       </div>
-      
+
       <div class="dropdown">
         <button class="dropbtn">Quêtes</button>
         <div class="dropdown-content">
-          <a href="#">Quêtes des 26 dofus</a>
+          <a href="/quetes">Quêtes des 4 dofus</a>
           <a href="#">Alignements bontarien</a>
           <a href="#">Alignements brakmarien</a>
         </div>
@@ -55,14 +56,13 @@
           <a href="/connexion" id="connexion"><button class="navbtn">Connexion</button></a>
         <?php } else { ?>
           <div class="dropdown">
-            <button class="dropbtn"><?= $_SESSION['user']['username'] ?></button>
+            <button class="dropbtn" id="usernamep"><?= $_SESSION['user']['username'] ?></button>
             <div class="dropdown-content">
-              <a href="#">Mon compte</a>
-              <a href="#">Déconnexion</a>
+              <a href="/profil">Mon compte</a>
+              <a href="/deconnexion">Déconnexion</a>
             </div>
           </div>
         <?php } ?>
       </div>
     </div>
   </nav>
- 

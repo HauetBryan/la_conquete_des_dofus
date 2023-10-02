@@ -30,10 +30,7 @@ if (count($_POST) > 0) {
         if (!isset($formErrors['email'])) {
             $user->password = $user->getHash();
             if (password_verify($_POST['password'], $user->password)) {
-                $_SESSION['user'] = $user->getInfos();
-
-                // $_SESSION['success_message'] = 'Connexion réussie !';
-                
+                $_SESSION['user'] = $user->getInfos();                
                 header('Location:/accueil');
                 exit;
             } else {

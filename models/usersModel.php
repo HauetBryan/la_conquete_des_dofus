@@ -14,8 +14,7 @@ class users
     public function __construct()
     {
         try {
-            $this->db = new PDO('mysql:host=localhost;dbname=la_conquete_des_dofus;charset=utf8', "root", "");
-        } catch (PDOException $e) {
+            $this->db = new PDO('mysql:host=localhost;dbname=la_conquete_des_dofus;charset=utf8', 'Z0MBARR', 'Bryan998lol*');        } catch (PDOException $e) {
             print "Erreur :" . $e->getMessage();
             die;
         }
@@ -74,6 +73,14 @@ class users
         $request->bindValue(':email', $this->email, PDO::PARAM_STR);
         $request->execute();
         return $request->fetch(PDO::FETCH_ASSOC); 
+    }
+
+    public function delete() {
+        $query = 'DELETE FROM `jgh99_users` WHERE `id` = :id';
+
+        $request = $this->db->prepare($query);
+        $request->bindValue(':id', $this->id, PDO::PARAM_INT);
+        return $request->execute();
     }
 }
 

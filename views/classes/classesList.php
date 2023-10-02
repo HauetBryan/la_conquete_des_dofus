@@ -9,7 +9,6 @@
                     <strong><?= $c->name ?></strong>
                     <br>
                     <?= $c->description ?>
-
                 </p>
             </div>
         </div>
