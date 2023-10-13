@@ -31,6 +31,7 @@ if (count($_POST) > 0) {
             $user->password = $user->getHash();
             if (password_verify($_POST['password'], $user->password)) {
                 $_SESSION['user'] = $user->getInfos();                
+                $_SESSION['user']['email'] = $_POST['email'];
                 header('Location:/accueil');
                 exit;
             } else {

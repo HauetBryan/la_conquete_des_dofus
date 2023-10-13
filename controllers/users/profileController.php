@@ -8,6 +8,9 @@ $user = new users();
 
 $user->id = $_SESSION['user']['id'];
 
+$usersDetails = $user->getOneById();
+
+
 if (isset($_POST['delete'])) {
     if($user->delete()){
         unset($_SESSION['user']);

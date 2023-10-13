@@ -24,13 +24,14 @@ main {
 
 h1 {
     color: $yellow;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     font-variant: small-caps;
     text-align: center;
 }
 
 @import 'navbar';
 @import 'form';
+@import 'profil';
 @import 'index';
 @import 'cardsList';
 @import 'monstersList';

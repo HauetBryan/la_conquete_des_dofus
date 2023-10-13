@@ -16,7 +16,7 @@
                         <br>
                         <?= $m->pa ?>
                         <br>
-                        <i class="fa-solid fa-star fa-beat" style="color: #d4af37;"></i>
+                        <i class="fa-solid fa-star" style="color: #d4af37;"></i>
                         <br>
                         <?= $m->pm ?>
                         <br>

@@ -52,7 +52,7 @@ if (count($_POST) > 0) {
             $formErrors["passwordC"] = "Les mots de passe sont différents, veuillez mettre le même mot de passe.";
         }
     } else {
-        $formErrors["passwordC"] = "Le mot de passe doit être rempli, c'est obligatoire.";
+        $formErrors["passwordC"] = "La confirmation du mot de passe doit être rempli, c'est obligatoire.";
     }
     
     if (!empty($_POST['email'])) {
@@ -85,7 +85,7 @@ if (count($_POST) > 0) {
             $formErrors["nationalities"] = "La nationalité est invalide, veuillez en choisir une disponible dans la liste.";
         }
     } else {
-        $formErrors["nationalities"] = "La nationalité est obligatoire";
+        $formErrors["nationalities"] = "La nationalité est obligatoire.";
     }
     if (count($formErrors) == 0) {
         if($users->add()) {

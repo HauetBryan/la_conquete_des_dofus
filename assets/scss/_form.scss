@@ -2,8 +2,7 @@
     color: $color;
     background-color: $bgBorderColor;
     border: 3px solid $bgBorderColor;
-    width: 100%;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border-radius: 35px;
     transition: 0.3s;
 
@@ -23,6 +22,8 @@
 }
 
 form {
+    width: 100%;
+
     &:not(.searchForm) {
         display: flex;
         flex-direction: column;
@@ -32,6 +33,7 @@ form {
         border-radius: 5px;
         width: 50%;
         margin-bottom: 15px;
+        margin-top: 1rem;
 
         label {
             margin-top: 2%;

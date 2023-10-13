@@ -1,7 +1,6 @@
 <main id="login">
     <h1>Connexion</h1>
     <form action="/connexion" method="post" class="formlogin">
-
             <label for="email">Adresse mail</label>
             <input type="email" name="email" id="email" placeholder="Bryanhauet8@gmail.com">
             <?php if (isset($formErrors['email'])) { ?>
