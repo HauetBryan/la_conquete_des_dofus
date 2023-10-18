@@ -13,7 +13,7 @@
 
     <div id="modal-container" class="modal-container">
         <form action="/profil" method="post" class="modal-confirme">
-        <div class="modal">
+            <div class="modal">
                 <div class="modal-header">
                     <span class="close-btn">X</span>
                 </div>
@@ -26,5 +26,5 @@
                 </div>
             </div>
         </form>
-        </div>
+    </div>
 </main>

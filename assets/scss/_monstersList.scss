@@ -1,0 +1,10 @@
+.statsContainer {
+    table{
+        border-collapse: collapse;
+        width: fit-content;
+        td, tr, th {
+            border: 1px solid black;
+            padding: 0.5rem;
+        }
+    }
+}

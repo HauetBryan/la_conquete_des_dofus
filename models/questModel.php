@@ -5,7 +5,7 @@ class quest
     public $id;
     public $name;
     public $description;
-    private $db;
+    private PDO $db;
 
     public function __construct()
     {
@@ -17,11 +17,22 @@ class quest
         }
     }
 
-    public function getQuestPourpre() {
-        
+    public function getQuestPourpre()
+    {
+
         $query = 'SELECT `name`, `description` 
         FROM `jgh99_quests` 
         WHERE `id` = 1';
+
+        $request = $this->db->query($query);
+        return $request->fetch(PDO::FETCH_OBJ);
+    }
+
+    public function getQuestEmeraude()
+    {
+        $query = 'SELECT `name`, `description` 
+        FROM `jgh99_quests` 
+        WHERE `id` = 2';
 
         $request = $this->db->query($query);
         return $request->fetch(PDO::FETCH_OBJ);

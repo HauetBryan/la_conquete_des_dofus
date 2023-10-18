@@ -3,7 +3,7 @@ class countries
 {
     public $id;
     public $name;
-    private $db;
+    private PDO $db;
 
     public function __construct()
     {

@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-require_once "../../models/bestiaireModel.php";
+require_once "../../models/monstersModel.php";
 
 $monsters = new monsters;
 $monstersList = $monsters->getList();

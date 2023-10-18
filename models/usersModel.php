@@ -9,7 +9,7 @@ class users
     public $id_ranks;
     public $id_countries;
     public $id_nationalities;
-    private $db;
+    private PDO $db;
 
     public function __construct()
     {

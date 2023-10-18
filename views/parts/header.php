@@ -28,11 +28,11 @@
       </div>
 
       <div class="dropdown">
-        <button class="dropbtn">Quêtes</button>
+        <button class="dropbtn">Guides</button>
         <div class="dropdown-content">
-          <a href="/quetes">Quêtes des 4 dofus</a>
-          <a href="#">Alignements bontarien</a>
-          <a href="#">Alignements brakmarien</a>
+        <a href="/dofus-pourpre">QUÊTE DU DOFUS POURPRE</a>
+        <a href="/dofus-emeraude">QUÊTE DU DOFUS EMERAUDE</a>
+        <a href="/questions">Vos questions réponses</a>
         </div>
       </div>
 
