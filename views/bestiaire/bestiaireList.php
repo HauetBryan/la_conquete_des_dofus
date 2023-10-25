@@ -6,12 +6,13 @@
                 <img src="<?= $m->image ?>" alt=" <?= $m->name ?>">
                 <div class="card-overlay">
                     <div class="card-text">
-                        <strong><?= $m->name ?></strong>
+                        <strong id="fontsize"><?= $m->name ?></strong>
                         <p><i class="fa-solid fa-heart fa-beat-fade" style="color: #f08080;"></i> <?= $m->hpmin ?>/<?= $m->hpmax ?></p>
                         <p><i class="fa-solid fa-star" style="color: #d4af37;"></i> <?= $m->pa ?></p>
                         <p><i class="fa-solid fa-shoe-prints" style="color: #a1c049;"></i> <?= $m->pm ?></p>
-                        <button class="btn open-modal-btn" idmonster="<?= $m->id ?>">Voir les stats</button>
-
+                        <div class="questbutonstat">
+                            <button class="btn open-modal-btn" idmonster="<?= $m->id ?>">Voir les stats</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -25,20 +26,20 @@
             <span class="close-btn">X</span>
         </div>
         <div class="modal-content">
-        <div class="statsContainer">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Élément</th>
-                        <th>Pourcentage Min</th>
-                        <th>Pourcentage Max</th>
-                    </tr>
-                </thead>
-                <tbody class="statBody">
+            <div class="statsContainer">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Élément</th>
+                            <th>Pourcentage Min</th>
+                            <th>Pourcentage Max</th>
+                        </tr>
+                    </thead>
+                    <tbody class="statBody">
 
-                </tbody>
-            </table>
-        </div>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 </div>

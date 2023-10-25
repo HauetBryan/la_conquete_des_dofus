@@ -34,6 +34,9 @@ form {
         margin-bottom: 15px;
         margin-top: 1rem;
 
+        textarea {
+            padding: 15px;
+        }
         label {
             margin-top: 2%;
             margin-bottom: 2%;
@@ -58,7 +61,6 @@ form {
         input[type=submit] {
             @include formButtons($dark, $yellow, $success);
             margin-bottom: 1rem;
-            width: 300px
         }
 
         .cancel {
@@ -72,7 +74,7 @@ form {
             text-align: center;
             text-decoration: none;
             margin-bottom: 1rem;
-            width: 300px;
+            width: 10rem;
         }
 
         select {

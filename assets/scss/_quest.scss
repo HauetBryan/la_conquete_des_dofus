@@ -12,13 +12,6 @@
     padding-right: 2rem;
     padding-top: 2rem;
 
-    h2 {
-        color: $yellow;
-        font-size: 40px;
-        border-bottom: 2px solid $brown;
-        width: 75%;
-        text-align: center;
-    }
 
     .imagesContainer {
         align-items: center;
@@ -41,8 +34,16 @@
                 width: 150px;
             }
         }
+
     }
 
+    h2 {
+        color: $yellow;
+        font-size: 40px;
+        border-bottom: 2px solid $brown;
+        width: 75%;
+        text-align: center;
+    }
 
 }
 
@@ -60,6 +61,25 @@
 
 .quetedofus {
     font-size: 50px;
+}
+
+.questbutonstat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    width: 75%;
+    padding: 1rem;
+
+    button {
+        background-color: $dark;
+        color: #F1F1E4;
+        padding: 1%;
+        text-decoration: none;
+        border-radius: 5px;
+        color: $light;
+    }
 }
 
 .questbuton {
@@ -139,6 +159,17 @@
                 margin: 0;
             }
         }
+    }
+}
+
+.questions {
+    border: 2px solid $yellow;
+    padding: 15px;
+    margin: 2rem;
+    border-radius: 5px;
+
+    .titlequestion {
+        width: 100%;
     }
 }
 

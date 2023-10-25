@@ -20,3 +20,6 @@ RewriteRule ^monstres$ /controllers/bestiaire/bestiaireListController.php
 #Quest
 RewriteRule ^quetes$ /controllers/questController/questController.php
 RewriteRule ^dofus-pourpre$ /controllers/questController/dofus-pourpreController.php
+RewriteRule ^dofus-emeraude$ /controllers/questController/dofus-emeraudeController.php
+RewriteRule ^questions$ /controllers/questController/questionsController.php
+RewriteRule ^questionsliste$ /controllers/questController/questionsListeController.php

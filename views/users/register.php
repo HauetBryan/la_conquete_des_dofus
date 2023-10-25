@@ -2,7 +2,11 @@
     <h1>INSCRIPTION</h1>
 
     <form action="/inscription" method="post">
-
+        <div class="success-message">
+            <?php if (isset($success)) { ?>
+                <p> <?= $success ?> <a href="/connexion">Ici</a> </p>
+            <?php } ?>
+        </div>
         <!-- IDENTIFIANT -->
         <label for="username">Identifiant</label>
         <input type="text" name="username" id="username" placeholder="exemple: Z0MBARR..." value="<?= @$_POST['username'] ?>">
@@ -58,11 +62,6 @@
         <div class="formButtons">
             <a href="/accueil" class="cancel">Annuler</a>
             <input name="submit" type="submit" value="Envoyer">
-        </div>
-        <div class="success-message">
-            <?php if (isset($success)) { ?>
-                <p> <?= $success ?> <a href="/connexion">Ici</a> </p>
-            <?php } ?>
         </div>
     </form>
     <script src="../../assets/js/script.js"></script>

@@ -3,7 +3,7 @@ $brown: #2D2D2D;
 $yellow: #D4AF37;
 $light : #E0E0E0;
 $danger : lightcoral;
-$success : #A1C049;
+$success : #24761b;
 
 
 body {
@@ -27,6 +27,18 @@ h1 {
     margin-bottom: 2%;
     font-variant: small-caps;
     text-align: center;
+}
+
+.mainindex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    padding: 20px;
+    background-color: $light;
+    border: $yellow solid 2px;
+    border-radius: 5px;
 }
 
 @import 'navbar';

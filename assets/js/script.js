@@ -23,4 +23,16 @@ for (let btn of closeBtn) {
     });
 }
  
+responsiveMenuButton.addEventListener('click', () => {
+    if(responsiveMenu.classList.contains('active')) {
+        responsiveMenu.style.display = "none";
+        responsiveMenu.classList.remove('active')
+
+    } else {
+
+        responsiveMenu.style.display = "block";
+        responsiveMenu.classList.add('active')
+
+    }
+})
 

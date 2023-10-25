@@ -9,7 +9,7 @@
         <a href="/modifier-profil">Modifier mon profil</a>
 
     </form>
-    <button id="open-modal-btn">Supprimer mon compte</button>
+    <button class="open-modal-btn butondelete">Supprimer mon compte</button>
 
     <div id="modal-container" class="modal-container">
         <form action="/profil" method="post" class="modal-confirme">

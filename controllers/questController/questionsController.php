@@ -38,7 +38,9 @@ if (count($_POST) > 0) {
 
     if (count($formErrors) == 0) {
         if ($questions->add()) {
+            header("Location: /questionsliste");
             $success = 'Votre question a bien été prise en compte.';
+            exit;
         }
     }
 }
