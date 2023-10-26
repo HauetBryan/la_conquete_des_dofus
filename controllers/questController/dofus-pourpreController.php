@@ -1,3 +1,5 @@
+<!-- quête du dofus pourpre qui vient de la base de données -->
+
 <?php
 session_start();
 require_once "../../models/questModel.php";

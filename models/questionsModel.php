@@ -1,5 +1,5 @@
 <?php
-
+// Création de la class questions, ajout des éléments de la table.
 class questions
 {
     public int $id = 0;
@@ -9,6 +9,7 @@ class questions
     public int $id_users = 0;
     private PDO $db;
 
+    // Connexion avec la base de données
     public function __construct()
     {
         try {
@@ -19,6 +20,7 @@ class questions
         }
     }
 
+    // Ajouter du contenu pour la base de données
     public function add()
     {
         $query = 'INSERT INTO `jgh99_questions` (`content`, `title`, `datetime`, `id_users`)
@@ -33,6 +35,7 @@ class questions
         return $request->execute();
     }
 
+    // Création méthode getList de la table jgh99_questions avec une jointure de jgh99_users
     public function getList()
     {
         $query = 'SELECT `Q`.`id`,`title`,`content`,`datetime`, `U`.`username`
@@ -44,6 +47,7 @@ class questions
         return $request->fetchAll(PDO::FETCH_OBJ);
     }
 
+    // Selectionne l'id de l'utilisateur
     public function getOneById()
     {
 
@@ -59,6 +63,7 @@ class questions
         return $request->fetch(PDO::FETCH_OBJ);
     }
 
+    // Met à jour le contenu de la question et son titre
     public function update()
     {
         $query = 'UPDATE `jgh99_questions`
@@ -74,7 +79,9 @@ class questions
         return $request->execute();
     }
 
-    public function delete() {
+    // Supprime la question via l'id
+    public function delete()
+    {
 
         $query = 'DELETE FROM `jgh99_questions` WHERE `id` = :id';
 

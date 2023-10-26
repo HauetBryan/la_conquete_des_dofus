@@ -1,4 +1,4 @@
-/* NAVBAR */
+/* NAVBAR et Navbar responsive */
 nav:not(#responsive) {
     display: block;
     z-index: 1;
@@ -148,8 +148,12 @@ nav:not(#responsive) {
                 width: 150px;
                 margin: 1rem;
             }
-        }
 
+        }
+        &#hiddenclasses {
+            display: none;
+        }
+        
         li {
             color: $yellow;
 

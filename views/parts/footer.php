@@ -1,3 +1,4 @@
+<!-- Ma vue du footer -->
 
 <footer>
   <div class="spacefoot">
@@ -10,9 +11,9 @@
         Certaines illustrations sont la propriété d'Ankama Studio et de Dofus.</p>
     </div>
     <div class="socials">
-      <a href="https://www.linkedin.com/in/bryan-h-62b36a277/" target="_blank"><img src="assets/images/Linkedine.png" alt="" width="50px"></a>
-      <a href="https://github.com/HauetBryan" target="_blank"><img src="assets/images/github.png" alt="" width="50px"></a>
-      <img src="assets/images/mail.png" alt="" width="50px">
+      <a href="https://www.linkedin.com/in/bryan-h-62b36a277/" target="_blank"><img src="assets/images/Linkedine.png" alt="icone linkedine" width="50px"></a>
+      <a href="https://github.com/HauetBryan" target="_blank"><img src="assets/images/github.png" alt="icone github" width="50px"></a>
+      <img src="assets/images/mail.png" alt="icone mail" width="50px">
     </div>
   </div>
   </footer>

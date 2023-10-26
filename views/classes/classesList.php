@@ -1,3 +1,5 @@
+<!-- Vue de ma page de classes -->
+
 <main>
     <h1>Explication des 19 classes</h1>
 <div class="cardsContainer">

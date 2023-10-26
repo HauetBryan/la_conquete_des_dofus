@@ -1,3 +1,5 @@
+<!-- Vue pour mettre à jour les informations de mon utilisateur -->
+
 <main>
     <form action="/modifier-profil" method="post">
 

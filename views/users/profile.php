@@ -1,3 +1,5 @@
+<!-- Vue de ma page de profil -->
+
 <main>
     <h1>Bonjour <?= $_SESSION['user']['username'] ?> voici votre profil</h1>
     <form action="/profil" method="post" class="profilUti">

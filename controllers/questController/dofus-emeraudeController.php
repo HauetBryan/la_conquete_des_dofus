@@ -1,3 +1,5 @@
+<!-- la quête du dofus emeraude qui vient de la base de données -->
+
 <?php
 session_start();
 

@@ -1,5 +1,5 @@
 <?php
-
+// Création de la class quest, ajout des éléments de la table.
 class quest
 {
     public $id;
@@ -7,6 +7,8 @@ class quest
     public $description;
     private PDO $db;
 
+
+    // Connexion avec la base de données
     public function __construct()
     {
         try {
@@ -17,6 +19,7 @@ class quest
         }
     }
 
+    // Va chercher la quête du dofus pourpre dans la base de données
     public function getQuestPourpre()
     {
 
@@ -28,6 +31,7 @@ class quest
         return $request->fetch(PDO::FETCH_OBJ);
     }
 
+    // Va chercher la quête du dofus emeraude dans la base de données
     public function getQuestEmeraude()
     {
         $query = 'SELECT `name`, `description` 

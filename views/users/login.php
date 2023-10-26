@@ -1,3 +1,5 @@
+<!-- Vue de ma page de connexion -->
+
 <main id="login">
     <h1>Connexion</h1>
     <form action="/connexion" method="post" class="formlogin">

@@ -1,3 +1,5 @@
+<!-- AJAX de monster controller  -->
+
 <?php
 
 require_once '../../models/resistancesModel.php';

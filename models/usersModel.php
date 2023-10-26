@@ -1,5 +1,5 @@
 <?php
-
+// Création de la class users, ajout des éléments de la table.
 class users
 {
     public $id;
@@ -11,6 +11,7 @@ class users
     public $id_nationalities;
     private PDO $db;
 
+    // Connexion avec la base de données
     public function __construct()
     {
         try {
@@ -20,6 +21,8 @@ class users
             die;
         }
     }
+
+    // Ajout de l'utilisateur dans la base de données
     public function add()
     {
         $query = 'INSERT INTO `jgh99_users` (`username`, `password`, `email`, `id_ranks`, `id_countries`, `id_nationalities`)
@@ -36,6 +39,7 @@ class users
         return $request->execute();
     }
 
+    // Vérifie si le mail existe déjà
     public function checkIfExistsByEmail()
     {
         $query = "SELECT COUNT(*) FROM `jgh99_users` WHERE `email` = :email";
@@ -47,6 +51,7 @@ class users
         return $request->fetch(PDO::FETCH_COLUMN);
     }
 
+    // vérifie si l'identifiant existe déjà
     public function checkIfExistsByUsername()
     {
         $query = "SELECT COUNT(*) FROM `jgh99_users` WHERE `username` = :username";
@@ -58,6 +63,7 @@ class users
         return $request->fetch(PDO::FETCH_COLUMN);
     }
 
+    // Méthode pour hashé le mot de passe
     public function getHash()
     {
         $query = "SELECT `password` FROM `jgh99_users` WHERE `email` = :email";
@@ -69,6 +75,7 @@ class users
         return $request->fetch(PDO::FETCH_COLUMN);
     }
 
+    // Va rechercher les infos de l'utilisateur via la table jgh99_users
     public function getInfos()
     {
         $query = 'SELECT `id`, `username`, `id_ranks` FROM `jgh99_users` WHERE `email` = :email';
@@ -80,6 +87,7 @@ class users
         return $request->fetch(PDO::FETCH_ASSOC);
     }
 
+    // Supprime l'utilisateur
     public function delete()
     {
         $query = 'DELETE FROM `jgh99_users` WHERE `id` = :id';
@@ -89,6 +97,7 @@ class users
         return $request->execute();
     }
 
+    // Va rechercher toutes les informations de l'utilisateur
     public function getOneById()
     {
         $query = 'SELECT `username`, `email`, `N`.`name` AS `Nationalite`, `id_nationalities`, `id_countries`, `C`.`name` AS `Pays`
@@ -103,6 +112,7 @@ class users
         return $request->fetch(pdo::FETCH_OBJ);
     }
 
+    // Met à jour les informations de l'utilisateur
     public function update()
     {
         $query = 'UPDATE `jgh99_users`
@@ -118,6 +128,7 @@ class users
         return $request->execute();
     }
 
+    // Met à jour le mot de passe de l'utilisateur
     public function updatePassword()
     {
 

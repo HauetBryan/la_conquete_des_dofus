@@ -1,3 +1,5 @@
+<!-- Ma vue de ma page pour poser sa question -->
+
 <main id="questions">
     <h1>La boîte à questions : Vos réponses commencent ici !</h1>
     <?php

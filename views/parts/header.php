@@ -1,3 +1,5 @@
+<!-- Ma vue du header -->
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -16,7 +18,7 @@
     <!-- LOGO -->
     <div class="navbar">
       <div class="logo">
-        <a href="/accueil"><img src="assets/images/LOGO DOFUS.png" alt="" width="75px"></a>
+        <a href="/accueil"><img src="assets/images/LOGO DOFUS.png" alt="logo dofus" width="75px"></a>
       </div>
       <!-- MENU DÉROULANT -->
 
@@ -61,7 +63,7 @@
   </nav>
   <nav id="responsive">
     <div class="logo">
-      <img src="assets/images/LOGO DOFUS.png" alt="" width="75px" id="responsiveMenuButton">
+      <img src="assets/images/LOGO DOFUS.png" alt="logo dofus" width="75px" id="responsiveMenuButton">
     </div>
     <ul id="responsiveMenu">
       <li><a href="/accueil">Accueil</a></li>
@@ -72,8 +74,7 @@
         <li><a href="/dofus-emeraude">QUÊTE DU DOFUS EMERAUDE</a></li>
         <li><a href="/questionsliste">Vos questions réponses</a></li>
       </ul>
-      <li>Classes</li>
-      <ul>
+      <ul id="hiddenclasses">
         <li><a href="/liste-des-classes">Explications des 19 classes</a></li>
       </ul>
       <?php if (!isset($_SESSION['user'])) { ?>

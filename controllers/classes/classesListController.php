@@ -1,3 +1,5 @@
+<!-- Liste des classes qui viennent de la base de données -->
+
 <?php
 session_start();
 

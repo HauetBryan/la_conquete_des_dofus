@@ -1,3 +1,5 @@
+<!-- Déconnexion controller -->
+
 <?php
 // Je démarre la session pour pouvoir agir sur les variables de session et la session en elle-même
 session_start();

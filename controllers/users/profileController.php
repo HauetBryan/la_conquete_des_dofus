@@ -1,3 +1,5 @@
+<!-- Le controller du profil utilisateur -->
+
 <?php
 session_start();
 

@@ -1,3 +1,5 @@
+<!-- Le controller de l'inscription -->
+
 <?php
 session_start();
 

@@ -1,3 +1,5 @@
+<!-- Connexion controller -->
+
 <?php
 session_start();
 

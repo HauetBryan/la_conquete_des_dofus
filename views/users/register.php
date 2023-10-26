@@ -1,3 +1,5 @@
+<!-- Vue de mon inscription -->
+
 <main id="register">
     <h1>INSCRIPTION</h1>
 

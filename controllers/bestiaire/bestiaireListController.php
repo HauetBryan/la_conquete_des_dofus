@@ -1,3 +1,5 @@
+<!-- liste du bestiaire qui vient de la base de données -->
+
 <?php
 session_start();
 

@@ -1,3 +1,5 @@
+// SASS de la page d'accueil
+
 #index {
     background-color: #F8E1B7;
     background-image: url("../images/fond-dofus.jpg");
@@ -23,9 +25,11 @@ header {
     align-items: center;
 
     h1 {
-        margin: 0;
+        margin: 1rem;
         font-size: 5rem;
-        color: $dark;
+        color: $yellow;
+        background-color: rgba(0, 0, 0, 0.406);
+        border-radius: 5px;
     }
     
 }

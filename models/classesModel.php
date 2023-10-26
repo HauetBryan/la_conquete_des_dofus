@@ -1,5 +1,5 @@
 <?php
-// Création de la class, ajout des éléments de la table.
+// Création de la class classes, ajout des éléments de la table.
 class classes
 {
     public int $id = 0;

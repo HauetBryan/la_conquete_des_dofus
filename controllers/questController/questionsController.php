@@ -1,3 +1,5 @@
+<!-- Page pour écrire sa question qui ensuite est mis dans la base de données -->
+
 <?php
 session_start();
 if (!isset($_SESSION['user'])) {

@@ -1,3 +1,5 @@
+<!-- Le controller des mise à jour -->
+
 <?php
 session_start();
 

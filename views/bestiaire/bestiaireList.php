@@ -1,3 +1,5 @@
+<!-- La vue de ma page du bestiaire -->
+
 <main>
     <h1>Monstres</h1>
     <div class="cardsContainer">
